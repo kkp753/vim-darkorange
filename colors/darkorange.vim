@@ -10,6 +10,12 @@
 " a: argument
 " s: script file local (?)
 
+hi clear
+if exists("syntax_on")
+	syntax reset
+endif
+let colors_name = "darkorange"
+
 "256 colors
 set t_Co=256
 
