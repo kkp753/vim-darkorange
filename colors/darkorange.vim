@@ -40,7 +40,8 @@ let s:weak = {"ctermfg":"241"}
 let s:stg1 = {"ctermfg":"166", "cterm":"BOLD"}
 let s:stg2 = {"ctermfg":"166"}
 let s:stg3 = {"ctermfg":"102", "cterm":"BOLD"}
-let s:acnt = {"ctermfg":"68"}
+let s:acc1 = {"ctermfg":"68"}
+let s:acc2 = {"ctermfg":"139"}
 let s:hide = {"ctermfg":"237"}
 let s:invt = {"ctermbg":"214"}
 let s:todo = {"ctermfg":"241", "ctermbg":"214"}
@@ -81,14 +82,14 @@ call s:h("Type",         s:stg2) " Type
 call s:h("PreProc",      s:stg2) " #define/#include/..
 call s:h("SpecialKey",   s:hide) " space at line end, tab
 " Constant and minor groups
-call s:h("Constant",     s:acnt) " literal
-call s:h("String",       s:acnt) " string
+call s:h("Constant",     s:acc1) " literal
+call s:h("String",       s:acc2) " string
 "call s:h("Character")
 "call s:h("Number")
 "call s:h("Boolean")
 "call s:h("Float")
 " Cursor
-call s:h("MatchParen",   s:acnt) " Matched ()[]{}
+call s:h("MatchParen",   s:acc1) " Matched ()[]{}
 call s:h("Visual",       s:invt) " Visual
 call s:h("IncSearch",    s:invt) " Search Result
 call s:h("Todo",         s:todo) " TODO
@@ -100,7 +101,7 @@ call s:h("UnderLined",   s:test) " http://google.com
 " Message
 call s:h("ModeMsg",      s:stg2) " -- INSERT --
 "call s:h("Question",     s:test) " ?
-"call s:h("MoreMsg",      s:acnt) " ?
+"call s:h("MoreMsg",      s:acc1) " ?
 "call s:h("WarningMsg",   s:test) " ?
 call s:h("ErrorMsg",     s:invt) " Errpr
 "call s:h("Tooltip",      s:test) " ?
@@ -118,9 +119,9 @@ call s:h("fortranUnitHeader", s:stg1) " profram/contains/function/..
 " LaTeX
 call s:h("texStatement",  s:stg2) " \begin~, \renew~,...
 call s:h("texSection",    s:stg1) " \sectioon
-call s:h("texMathZoneE",  s:acnt) " equation ,align:AS
-call s:h("texMathZoneD",  s:acnt) " eqnarray:D
-call s:h("texMathZoneDS", s:acnt) " eqnarray*:DS
-"call s:h("texMathSymbol", s:acnt) " \prod
+call s:h("texMathZoneE",  s:acc1) " equation ,align:AS
+call s:h("texMathZoneD",  s:acc1) " eqnarray:D
+call s:h("texMathZoneDS", s:acc1) " eqnarray*:DS
+"call s:h("texMathSymbol", s:acc1) " \prod
 
 
