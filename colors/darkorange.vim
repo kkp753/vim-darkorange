@@ -35,7 +35,6 @@ function! s:h(group, style)
 	 \ "cterm="   (has_key(a:style,   "cterm") ? a:style.cterm   : "NONE")
 endfunction
 
-" Styles
 let s:norm = {"ctermfg":"145", "ctermbg":"234"}
 let s:weak = {"ctermfg":"241"}
 let s:stg1 = {"ctermfg":"166", "cterm":"BOLD"}
@@ -43,24 +42,25 @@ let s:stg2 = {"ctermfg":"166"}
 let s:stg3 = {"ctermfg":"102", "cterm":"BOLD"}
 let s:acnt = {"ctermfg":"68"}
 let s:hide = {"ctermfg":"237"}
-" Lime :148
 let s:invt = {"ctermbg":"214"}
 let s:todo = {"ctermfg":"241", "ctermbg":"214"}
 let s:outf = {"ctermfg":"59",  "ctermbg":"236"}
 let s:stln = {"ctermfg":"166", "ctermbg":"236"}
 
 "------------------------
-" Gray   : 015(#ff) > 255(#ee) > 254(#e4) > 253(#da)
-"        > 252(#d0) > 251(#c6) >   7(#c0) > 250(#bc)
-"        > 249(#b2) > 145(#af) > 248(#a8) > 247(#9e)
-"        > 246(#94) > 255(#8a) > 102(#87) >   8(#80) = 244(#80)
-"        > 243(#76) > 242(#6c) > 241(#62) >  59(#5f)
-"        > 240(#58) > 239(#4e) > 238(#44) > 237(#3a)
-"        > 236(#30) > 235(#26) > 234(#1c) > 233(#12)
-"        > 232(#08) >   0(#00)
-" Orange : 214 > 208 > 166 > 130
-" Lime   : 148
-" Blue   : 68
+" Gray    : 015(#ff) > 255(#ee) > 254(#e4) > 253(#da)
+"         > 252(#d0) > 251(#c6) >   7(#c0) > 250(#bc)
+"         > 249(#b2) > 145(#af) > 248(#a8) > 247(#9e)
+"         > 246(#94) > 255(#8a) > 102(#87) >   8(#80) = 244(#80)
+"         > 243(#76) > 242(#6c) > 241(#62) >  59(#5f)
+"         > 240(#58) > 239(#4e) > 238(#44) > 237(#3a)
+"         > 236(#30) > 235(#26) > 234(#1c) > 233(#12)
+"         > 232(#08) >   0(#00)
+" Orange  : 214(#ffaf00) > 208(#ff8700) > 166(#d75f00) > 130(#af5f00)
+" Blue    : 068(#5f87d7)
+" Plum    : 139(#af87af) | 140(#af87d7)
+" Scarlet : 124(#af0000) < 160(#d70000)
+" Lime    : 148(#afd700)
 "------------------------
 let s:test = {"ctermfg":"13"}
 
@@ -82,7 +82,7 @@ call s:h("PreProc",      s:stg2) " #define/#include/..
 call s:h("SpecialKey",   s:hide) " space at line end, tab
 " Constant and minor groups
 call s:h("Constant",     s:acnt) " literal
-call s:h("String",       s:stg3) "
+call s:h("String",       s:acnt) " string
 "call s:h("Character")
 "call s:h("Number")
 "call s:h("Boolean")
