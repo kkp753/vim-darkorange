@@ -10,11 +10,16 @@
 " a: argument
 " s: script file local (?)
 
+
+set background=dark
+
 hi clear
 if exists("syntax_on")
 	syntax reset
 endif
-let colors_name = "darkorange"
+
+" colorscheme name
+let g:colors_name = "darkorange"
 
 "256 colors
 set t_Co=256
@@ -91,7 +96,6 @@ call s:h("Todo",         s:todo) " TODO
 " Search    " ?
 " Directory " ?
 call s:h("UnderLined",   s:test) " http://google.com
-
 
 " Message
 call s:h("ModeMsg",      s:stg2) " -- INSERT --
